@@ -17,7 +17,7 @@ const APLCatalog = require('alexandria-apl-catalog').APL_CATALOG
 
 - Download last compatible versions versions with patches
 ```javascript
-"alexandria-apl-catalog": "git://github.com:udiante/alexandria-APL-catalog#semver:^1.0"
+"alexandria-apl-catalog": "git://github.com:udiante/alexandria-apl-catalog#semver:^1.0"
 ```
 
 - Local development
