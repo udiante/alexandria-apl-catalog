@@ -1,0 +1,1 @@
+module.exports.APL_CATALOG = require('./src/AlexaAPLCatalog')

@@ -1,0 +1,25 @@
+{
+  "name": "alexandria-apl-catalog",
+  "version": "1.2.0",
+  "description": "Alexa development utils",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/udiante/alexandria-sdk.git"
+  },
+  "author": "Alejandro Quibus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/udiante/alexandria-sdk/issues"
+  },
+  "homepage": "https://github.com/udiante/alexandria-sdk#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dateformat": "^3.0.3",
+    "string-template": "^1.0.0"
+  }
+}
