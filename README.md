@@ -8,6 +8,10 @@ Catálogo de componentes para `Alexa Presentation Language`.
 
 - APL_Simple_Icon_Text
 
+## Usage
+```javascript
+const APLCatalog = require('alexandria-apl-catalog').APL_CATALOG
+```
 
 ## NPM Dependency Management
 
