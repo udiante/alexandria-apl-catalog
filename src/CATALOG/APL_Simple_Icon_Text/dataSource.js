@@ -7,7 +7,7 @@ module.exports = {
             hintString: "HINT_STRING",
             logoImage: "ICON_URL",
             backgroundImage: "BACKGROUND_IMAGE",
-            backgroundOpacity: "OPACITY"
+            backgroundOpacity: "0.7"
         },
         transformers: [{
             inputPath: 'hintString',
