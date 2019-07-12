@@ -140,9 +140,18 @@
                         "height": "100vh"
                     },
                     {
-                        "type": "AlexaHeader",
-                        "headerTitle": "${payload.bodyTemplate7Data.title}",
-                        "headerAttributionImage": "${payload.bodyTemplate7Data.logoUrl}"
+                        "type": "Text",
+                        "width": "100vw",
+                        "height": "20vh",
+                        "paddingTop": "12dp",
+                        "paddingBottom": "12dp",
+                        "paddingLeft": "20dp",
+                        "paddingRight": "20dp",
+                        "textAlign": "center",
+                        "textAlignVertical": "center",
+                        "maxLines": 0,
+                        "fontSize": "22dp",
+                        "text": "${payload.bodyTemplate7Data.title}"
                     },
                     {
                         "type": "Container",
@@ -155,7 +164,7 @@
                                 "source": "${payload.bodyTemplate7Data.image.sources[0].url}",
                                 "scale": "best-fill",
                                 "width": "100vh",
-                                "height": "70vw",
+                                "height": "80vw",
                                 "align": "center"
                             }
                         ]
