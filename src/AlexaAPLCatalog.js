@@ -9,7 +9,7 @@ const CATALOG = {
     },
     APL_FullImage_Title_Header: {
         document: require('./CATALOG/APL_FullImage_Title_Header/document.json'),
-        dataSource: require('./CATALOG/APL_FullImage_Title_Header/dataSource')
+        dataSourceManager: require('./CATALOG/APL_FullImage_Title_Header/dataSource')
     }
 }
 
