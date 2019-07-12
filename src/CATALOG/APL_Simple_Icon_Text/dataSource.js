@@ -1,5 +1,3 @@
-module.exports.LEGACY = APL_DATA_SOURCE
-
 const PublicDataSource = {
     title: 'TITLE_TEXT', //Title of the APL,
     mainText: 'STRING',
@@ -48,3 +46,5 @@ const APL_DATA_SOURCE = {
         }]
     }
 }
+
+module.exports.LEGACY = APL_DATA_SOURCE
