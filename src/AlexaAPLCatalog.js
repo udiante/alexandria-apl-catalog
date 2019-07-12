@@ -6,10 +6,12 @@ const CATALOG = {
     APL_Simple_Icon_Text: {
         document: require('./CATALOG/APL_Simple_Icon_Text/document.json'),
         dataSource: require('./CATALOG/APL_Simple_Icon_Text/dataSource')
+    },
+    APL_FullImage_Title_Header: {
+        document: require('./CATALOG/APL_FullImage_Title_Header/document.json'),
+        dataSourceManager: require('./CATALOG/APL_FullImage_Title_Header/dataSource')
     }
 }
 
 
-module.exports = {
-    APL_Simple_Icon_Text: CATALOG.APL_Simple_Icon_Text
-}
+module.exports = CATALOG
