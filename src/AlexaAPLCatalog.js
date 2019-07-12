@@ -5,7 +5,8 @@
 const CATALOG = {
     APL_Simple_Icon_Text: {
         document: require('./CATALOG/APL_Simple_Icon_Text/document.json'),
-        dataSource: require('./CATALOG/APL_Simple_Icon_Text/dataSource')
+        dataSource: require('./CATALOG/APL_Simple_Icon_Text/dataSource').LEGACY,
+        dataSourceManager: require('./CATALOG/APL_Simple_Icon_Text/dataSource')
     },
     APL_FullImage_Title_Header: {
         document: require('./CATALOG/APL_FullImage_Title_Header/document.json'),
