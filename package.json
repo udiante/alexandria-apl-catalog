@@ -1,6 +1,6 @@
 {
   "name": "alexandria-apl-catalog",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Alexa development utils",
   "main": "index.js",
   "private": true,
