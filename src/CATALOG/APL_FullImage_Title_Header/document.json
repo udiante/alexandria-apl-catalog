@@ -140,32 +140,23 @@
                         "height": "100vh"
                     },
                     {
-                        "type": "Text",
-                        "width": "100vw",
-                        "height": "20vh",
-                        "paddingTop": "12dp",
-                        "paddingBottom": "12dp",
-                        "paddingLeft": "20dp",
-                        "paddingRight": "20dp",
-                        "textAlign": "center",
-                        "textAlignVertical": "center",
-                        "maxLines": 0,
-                        "fontSize": "22dp",
-                        "text": "${payload.bodyTemplate7Data.title}"
+                        "type": "AlexaHeader",
+                        "headerTitle": "${payload.bodyTemplate7Data.title}",
+                        "headerAttributionImage": "${payload.bodyTemplate7Data.logoUrl}"
                     },
                     {
                         "type": "Container",
                         "grow": 1,
-                        "alignItems": "center",
-                        "justifyContent": "center",
+                        "alignItems": "start",
+                        "justifyContent": "start",
                         "items": [
                             {
                                 "type": "Image",
                                 "source": "${payload.bodyTemplate7Data.image.sources[0].url}",
-                                "scale": "best-fill",
+                                "scale": "best-fit-down",
                                 "width": "100vh",
-                                "height": "80vw",
-                                "align": "center"
+                                "height": "60vw",
+                                "align": "top"
                             }
                         ]
                     }
@@ -203,7 +194,7 @@
                                 "height": "70vh",
                                 "width": "90vw",
                                 "source": "${payload.bodyTemplate7Data.image.sources[0].url}",
-                                "scale": "best-fill",
+                                "scale": "best-fit-down",
                                 "align": "center"
                             }
                         ]
