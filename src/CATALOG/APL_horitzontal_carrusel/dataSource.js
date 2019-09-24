@@ -18,10 +18,10 @@ module.exports.DataSource = {
     PublicDataSource: PublicDataSource,
     ItemModel: ItemModel,
     newPublicDataSource: function() {
-        Object.assign({}, this.PublicDataSource)
+        return Object.assign({}, this.PublicDataSource)
     },
     newItemModel: function() {
-        Object.assign({}, this.ItemModel)
+        return Object.assign({}, this.ItemModel)
     }
 }
 
