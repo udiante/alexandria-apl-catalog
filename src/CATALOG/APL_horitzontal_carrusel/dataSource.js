@@ -16,7 +16,13 @@ const ItemModel = {
 /// Public DataSource model to use the component
 module.exports.DataSource = {
     PublicDataSource: PublicDataSource,
-    ItemModel: ItemModel
+    ItemModel: ItemModel,
+    newPublicDataSource: function() {
+        Object.assign({}, this.PublicDataSource)
+    },
+    newItemModel: function() {
+        Object.assign({}, this.ItemModel)
+    }
 }
 
 /**
