@@ -4,6 +4,8 @@ Provides a default catalog of APL (Alexa Presentation Language) documents and th
 
 Catálogo de componentes para `Alexa Presentation Language`.
 
+Se all the available components in: [Project Wiki](https://github.com/udiante/alexandria-apl-catalog/wiki)
+
 ## Components
 
 - APL_Simple_Icon_Text
