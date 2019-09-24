@@ -38,7 +38,7 @@ module.exports.getInternalDataSource = function (dataSource) {
         return undefined
     }
     var itemsDataSource = []
-    for (let index = 0; index < dataSource.items.length; index++) {
+    for (var index = 0; index < dataSource.items.length; index++) {
         const item = dataSource.items[index];
         var itemDataSource = getItemAPLFromDataSource(item, index + 1)
         itemsDataSource.push(itemDataSource)
@@ -72,6 +72,7 @@ function getItemAPLFromDataSource(itemData, index) {
     aplModel.textContent.tertiaryText.text = itemData.tertiaryText
     aplModel.image.sources[0].url = itemData.imageURL
     aplModel.image.sources[1].url = itemData.imageURL
+    aplModel.token = itemData.itemIdentifier
     return aplModel
 }
 
