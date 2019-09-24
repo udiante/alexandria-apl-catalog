@@ -2,7 +2,7 @@ const PublicDataSource = {
     title: 'TITLE_TEXT', //Title
     backgroundImageUrl: 'URL_BACKGROUND_IMAGE', // Background image
     logoUrl: 'URL_LOGO_IMAGE', // Skill icon logo image,
-    items: [ItemModel] // List of items to display
+    items: [] // List of items to display {ItemModel} Objects
 }
 
 const ItemModel = {
