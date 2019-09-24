@@ -34,7 +34,7 @@ module.exports.getInternalDataSource = function (dataSource) {
     var itemsDataSource = []
     for (let index = 0; index < dataSource.items.length; index++) {
         const item = dataSource.items[index];
-        var itemDataSource = getItemAPLFromDataSource(item)
+        var itemDataSource = getItemAPLFromDataSource(item, index + 1)
         itemsDataSource.push(itemDataSource)
     }
 
@@ -42,9 +42,10 @@ module.exports.getInternalDataSource = function (dataSource) {
     aplDataSource.listTemplate1Metadata.logoUrl = dataSource.logoUrl
     aplDataSource.listTemplate1Metadata.backgroundImage.sources[0].url = dataSource.backgroundImageUrl
     aplDataSource.listTemplate1Metadata.backgroundImage.sources[1].url = dataSource.backgroundImageUrl
-    
+
     aplDataSource.listTemplate1ListData.listPage.listItems = itemsDataSource
-    
+    aplDataSource.listTemplate1ListData.totalNumberOfItems = itemsDataSource.length
+
     return aplDataSource
 }
 
@@ -112,36 +113,36 @@ const APL_ITEM_SOURCE = {
 
 const APL_DATA_SOURCE = {
     listTemplate1Metadata: {
-      type: 'object',
-      objectId: 'lt1Metadata',
-      backgroundImage: {
-        contentDescription: null,
-        smallSourceUrl: null,
-        largeSourceUrl: null,
-        sources: [
-          {
-            url: 'backgroundImage',
-            size: 'small',
-            widthPixels: 0,
-            heightPixels: 0
-          },
-          {
-            url: 'backgroundImage',
-            size: 'large',
-            widthPixels: 0,
-            heightPixels: 0
-          }
-        ]
-      },
-      title: 'title',
-      logoUrl: 'logoUrl'
+        type: 'object',
+        objectId: 'lt1Metadata',
+        backgroundImage: {
+            contentDescription: null,
+            smallSourceUrl: null,
+            largeSourceUrl: null,
+            sources: [
+                {
+                    url: 'backgroundImage',
+                    size: 'small',
+                    widthPixels: 0,
+                    heightPixels: 0
+                },
+                {
+                    url: 'backgroundImage',
+                    size: 'large',
+                    widthPixels: 0,
+                    heightPixels: 0
+                }
+            ]
+        },
+        title: 'title',
+        logoUrl: 'logoUrl'
     },
     listTemplate1ListData: {
-      type: 'list',
-      listId: 'lt1Sample',
-      totalNumberOfItems: 10, //Replace with the number of items
-      listPage: {
-        listItems: []
-      }
+        type: 'list',
+        listId: 'lt1Sample',
+        totalNumberOfItems: 10, //Replace with the number of items
+        listPage: {
+            listItems: []
+        }
     }
-  }
+}
