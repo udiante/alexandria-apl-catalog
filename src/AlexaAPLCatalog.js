@@ -11,6 +11,10 @@ const CATALOG = {
     APL_FullImage_Title_Header: {
         document: require('./CATALOG/APL_FullImage_Title_Header/document.json'),
         dataSourceManager: require('./CATALOG/APL_FullImage_Title_Header/dataSource')
+    },
+    APL_Vertical_Carrusel: {
+        document: require('./CATALOG/APL_vertical_carrusel/document.json'),
+        dataSourceManager: require('./CATALOG/APL_vertical_carrusel/dataSource')
     }
 }
 

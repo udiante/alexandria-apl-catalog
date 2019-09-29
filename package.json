@@ -1,6 +1,6 @@
 {
   "name": "alexandria-apl-catalog",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "Alexa development utils",
   "main": "index.js",
   "private": true,
@@ -17,5 +17,8 @@
     "url": "https://github.com/udiante/alexandria-apl-catalog/issues"
   },
   "homepage": "https://github.com/udiante/alexandria-apl-catalog#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  }
 }
