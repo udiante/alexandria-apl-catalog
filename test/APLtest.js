@@ -3,7 +3,7 @@ const APL_MANAGER = require('../index').APL_CATALOG
 
 describe('APL Vertical List', function() {
     it('The manager returns a valid object', function(){
-        const horitzonalManger = APL_MANAGER.APL_Horitzontal_Carrusel.dataSourceManager
+        const horitzonalManger = APL_MANAGER.APL_Vertical_Carrusel.dataSourceManager
         const dataSource = horitzonalManger.newPublicDataSource()
         var items = ["1", "2", "3", "4"]
         var itemDataSource = []
@@ -17,7 +17,7 @@ describe('APL Vertical List', function() {
             itemDataSource.push(newItem)
         });
         dataSource.items = itemDataSource
-        const document = APL_MANAGER.APL_Horitzontal_Carrusel.document
+        const document = APL_MANAGER.APL_Vertical_Carrusel.document
         assert(document)
         const internalDataSource = horitzonalManger.getInternalDataSource(dataSource)
         const itemArray = internalDataSource.listTemplate1ListData.listPage.listItems
