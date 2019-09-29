@@ -13,16 +13,20 @@ const ItemModel = {
     imageURL: '' //Image displayed at the right of the cell
 }
 
-/// Public DataSource model to use the component
-module.exports.DataSource = {
-    PublicDataSource: PublicDataSource,
-    ItemModel: ItemModel,
-    newPublicDataSource: function() {
-        return Object.assign({}, this.PublicDataSource)
-    },
-    newItemModel: function() {
-        return Object.assign({}, this.ItemModel)
-    }
+
+module.exports.PublicDataSource = PublicDataSource
+module.exports.ItemModel = ItemModel
+
+module.exports.newPublicDataSource = function() {
+    return newObjectCopy(this.PublicDataSource)
+},
+
+module.exports.newItemModel = function() {
+    return newObjectCopy(this.ItemModel)
+}
+
+function newObjectCopy(object) {
+    return JSON.parse(JSON.stringify(object));
 }
 
 /**
@@ -31,7 +35,7 @@ module.exports.DataSource = {
  * @returns {APL_DATA_SOURCE} APL Datasource response to the Alexa intent handler
  */
 module.exports.getInternalDataSource = function (dataSource) {
-    var aplDataSource = Object.assign({}, APL_DATA_SOURCE)
+    var aplDataSource = newObjectCopy(APL_DATA_SOURCE)
 
     // Prepare the items data
     if (!dataSource.items) {
@@ -64,7 +68,7 @@ module.exports.getInternalDataSource = function (dataSource) {
  * @param {number} index 
  */
 function getItemAPLFromDataSource(itemData, index) {
-    var aplModel = Object.assign({}, APL_ITEM_SOURCE)
+    var aplModel = newObjectCopy(APL_ITEM_SOURCE)
     aplModel.listItemIdentifier = itemData.itemIdentifier
     aplModel.ordinalNumber = index
     aplModel.textContent.primaryText.text = itemData.primaryText

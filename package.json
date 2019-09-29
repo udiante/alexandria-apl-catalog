@@ -17,5 +17,8 @@
     "url": "https://github.com/udiante/alexandria-apl-catalog/issues"
   },
   "homepage": "https://github.com/udiante/alexandria-apl-catalog#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  }
 }
