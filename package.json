@@ -19,6 +19,6 @@
   "homepage": "https://github.com/udiante/alexandria-apl-catalog#readme",
   "dependencies": {},
   "devDependencies": {
-    "mocha": "^6.2.0"
+    "mocha": "^10.2.0"
   }
 }
